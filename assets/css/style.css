@@ -25,12 +25,14 @@ header h1{
     color: #374151;
     margin-bottom: 1rem;
 }
+/* Header */
 /*Task form*/
 
 #task-form{
     display: flex;
 }
 
+/* Input */
 input, button{
     appearance: none;
     border: none;
@@ -47,6 +49,11 @@ input, button{
     font-size: 1.1rem;
     color: #374151;
 }
+
 #task-input::placeholder{
     color: #374151;
+}
+
+#task-submit{
+
 }
