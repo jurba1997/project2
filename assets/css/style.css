@@ -22,17 +22,19 @@ header{
 header h1{
     font-size: 2.5rem;
     font-weight: 450;
-    color: #374151;
+    color: #1b1f27;
     margin-bottom: 1rem;
 }
 /* Header */
+
 /*Task form*/
 
 #task-form{
     display: flex;
 }
 
-/* Input */
+/* Input and Submit*/
+
 input, button{
     appearance: none;
     border: none;
@@ -47,13 +49,36 @@ input, button{
     border-radius: 1rem;
     margin-right: 1rem;
     font-size: 1.1rem;
-    color: #374151;
+    color: #1b1f27;
 }
 
 #task-input::placeholder{
-    color: #374151;
+    color: #1b1f27;
 }
 
 #task-submit{
-
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1b1f27;
+    cursor: pointer;
+    transition: 0.4s;
 }
+
+#task-submit:hover{
+    opacity: 0.6;
+}
+
+
+/* Main section*/
+
+main {
+    padding: 1rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
