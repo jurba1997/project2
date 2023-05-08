@@ -8,7 +8,7 @@ window.addEventListener('load', () =>{
      * Alert when the Add Task button is clicked while the field is empty
      */
 
-    form.addEventListener('submit', (e) =>{
+    form.addEventListener('submit', (e) => {
         e.preventDefault()
 
     const task = input.value
@@ -61,8 +61,8 @@ window.addEventListener('load', () =>{
 
     input.value = "";
 
-    /** Making the Edit button work */
+    /** Making the buttons work */
 
-    
+
     })
 })
