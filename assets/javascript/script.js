@@ -3,7 +3,11 @@ window.addEventListener('load', () =>{
     const input = document.querySelector('#task-input')
     const list_el = document.querySelector('#tasks')
 
-    
+    /**
+     * Adding a task when the Add Task button is clicked
+     * Alert when the Add Task button is clicked while the field is empty
+     */
+
     form.addEventListener('submit', (e) =>{
         e.preventDefault()
 
@@ -19,10 +23,42 @@ window.addEventListener('load', () =>{
     
     const task_content_el = document.createElement("div");
     task_content_el.classList.add("content");
-    task_content_el.innerText = task;
 
     task_el.appendChild(task_content_el);
 
+    const task_input_el = document.createElement("input");
+    task_input_el.classList.add("text");
+    task_input_el.type = "text";
+    task_input_el.value = task;
+    task_input_el.setAttribute("readonly", "readonly");
+
+    task_content_el.appendChild(task_input_el)
+
+    const task_actions_el =document.createElement("div");
+    task_actions_el.classList.add("actions");
+
+        /** Edit button
+         */
+    const task_edit_el = document.createElement("button");
+    task_edit_el.classList.add("edit");
+    task_edit_el.innerHTML = "Edit";
+
+
+        /**Delete button
+         */
+    const task_delete_el = document.createElement("button");
+    task_delete_el.classList.add("delete");
+    task_delete_el.innerHTML = "Delete";
+
+
+        /**Create the buttons */
+    task_actions_el.appendChild(task_edit_el);
+    task_actions_el.appendChild(task_delete_el);
+
+    task_el.appendChild(task_actions_el);
+
     list_el.appendChild(task_el);
+
+    input.value = "";
     })
 })
