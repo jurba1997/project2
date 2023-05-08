@@ -60,5 +60,9 @@ window.addEventListener('load', () =>{
     list_el.appendChild(task_el);
 
     input.value = "";
+
+    /** Making the Edit button work */
+
+    
     })
 })
