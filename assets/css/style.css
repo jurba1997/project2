@@ -57,7 +57,7 @@ input, button{
 }
 
 #task-submit{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #1b1f27;
     cursor: pointer;
@@ -110,10 +110,6 @@ main {
     color: #1b1f27;
 }
 
-#tasks .task .content .text:not(:read-only){
-    color: #ac2b67;
-}
-
 #tasks .task .actions{
     display: flex;
     margin: 0 -0.5rem;
@@ -124,7 +120,7 @@ main {
 #tasks .actions button{
     cursor: pointer;
     margin: 0 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.4s;
