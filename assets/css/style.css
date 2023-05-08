@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #53678d;
+    background-image: url(../../background.png);
     color: aliceblue;
 }
 
@@ -95,7 +95,7 @@ main {
 
 /* Tasks elements*/
 
-/* Added tasks*/
+/**/
 #tasks .task{
     display: flex;
     justify-content: space-between;
