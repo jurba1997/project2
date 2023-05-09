@@ -104,6 +104,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+
 #tasks .task .content .text{
 	font-size: 1.2rem;
     font-weight: 600;
@@ -122,6 +126,7 @@ main {
 
 #tasks .actions button{
     cursor: pointer;
+    margin: 0 0 0 0.5rem;
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;

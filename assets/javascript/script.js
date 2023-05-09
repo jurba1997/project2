@@ -1,3 +1,4 @@
+
 window.addEventListener('load', () =>{
     const form = document.querySelector('#task-form')
     const input = document.querySelector('#task-input')
@@ -62,7 +63,23 @@ window.addEventListener('load', () =>{
     input.value = "";
 
     /** Making the buttons work */
+    /**Edit and Save buttons */
 
+    task_edit_el.addEventListener('click', (e) => {
+        if (task_edit_el.innerText.toLowerCase() == "edit") {
+            task_edit_el.innerText = "Save";
+            task_input_el.removeAttribute("readonly");
+            task_input_el.focus();
+        } else {
+            task_edit_el.innerText = "Edit";
+            task_input_el.setAttribute("readonly", "readonly");
+        }
+		});
+                /**Delete button */
+                task_delete_el.addEventListener('click', (e) => {
+                    list_el.removeChild(task_el);
+
+    })
 
     })
 })
